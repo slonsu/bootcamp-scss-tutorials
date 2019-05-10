@@ -34,7 +34,7 @@ body {
     padding: 11px 36.3px;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'lato black', sans-serif;
+    font-family: 'lato', sans-serif;
     font-weight: 900;
     font-size: 14px;
     border: none;
@@ -45,8 +45,8 @@ body {
     }
 
     &.medium {
-        font-size: 18px;
-        padding: 14px 47px;
+        font-size: 24px;
+        padding: 25.5px 65.5px;
     }
 
     &.large {
@@ -59,4 +59,21 @@ body {
         padding: 27px 102px;
     }
     
+    &.round {
+        &-3 {
+            border-radius: 3px;
+        }
+
+        &-7 {
+            border-radius: 7px;
+        }
+
+        &-12 {
+            border-radius: 12px;
+        }
+
+        &-20 {
+            border-radius: 20px;
+        }
+    }
 }
