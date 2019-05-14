@@ -1,5 +1,6 @@
 @import '_size';
 
+
 .btn {
     padding: 11px 36.3px;
     border: none;
@@ -10,35 +11,25 @@
     font-weight: 900;
     text-decoration: none;
     text-transform: uppercase;
-
+    
     &.medium {
         @include size(25.5px 65.5px, 24px);
     }
-
+    
     &.large {
         @include size(23px 93px, 26px);
     }
-
+    
     &.x-large {
         @include size(27px 102px, 36px);
     }
 
     &.round {
 
-        &-3 {
-            border-radius: 3px;
-        }
+        $rounds: 3, 7, 12, 20;
 
-        &-7 {
-            border-radius: 7px;
-        }
-
-        &-12 {
-            border-radius: 12px;
-        }
-
-        &-20 {
-            border-radius: 20px;
+        @each $round in $rounds {
+            &-#{$round} { border-radius: $round + px; }
         }
     }
 }
