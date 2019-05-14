@@ -1,25 +1,24 @@
-@import '_size';
-
+@import 'size';
 
 .btn {
     padding: 11px 36.3px;
     border: none;
-    background-color: $color-1;
-    color: $color-2;
+    background-color: color(1);
+    color: color(2);
     font-family: 'lato', sans-serif;
     font-size: 14px;
     font-weight: 900;
     text-decoration: none;
     text-transform: uppercase;
-    
+
     &.medium {
         @include size(25.5px 65.5px, 24px);
     }
-    
+
     &.large {
         @include size(23px 93px, 26px);
     }
-    
+
     &.x-large {
         @include size(27px 102px, 36px);
     }
@@ -30,6 +29,12 @@
 
         @each $round in $rounds {
             &-#{$round} { border-radius: $round + px; }
+        }
+    }
+
+    &.bg-color {
+        @for $ind from 1 through 11 {
+            &-#{$ind} { background-color: color($ind); }
         }
     }
 }
