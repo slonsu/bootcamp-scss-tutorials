@@ -7,52 +7,6 @@ body {
     padding-left: 50px;
 }
 
-.btn {
-    padding: 11px 36.3px;
-    border: none;
-    background-color: $color-1;
-    color: $color-2;
-    font-family: 'lato', sans-serif;
-    font-size: 14px;
-    font-weight: 900;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    &.medium {
-        padding: 25.5px 65.5px;
-        font-size: 24px;
-    }
-
-    &.large {
-        padding: 23px 93px;
-        font-size: 26px;
-    }
-
-    &.x-large {
-        padding: 27px 102px;
-        font-size: 36px;
-    }
-
-    &.round {
-
-        &-3 {
-            border-radius: 3px;
-        }
-
-        &-7 {
-            border-radius: 7px;
-        }
-
-        &-12 {
-            border-radius: 12px;
-        }
-
-        &-20 {
-            border-radius: 20px;
-        }
-    }
-}
-
 .row {
     display: flex;
     align-items: flex-end;
